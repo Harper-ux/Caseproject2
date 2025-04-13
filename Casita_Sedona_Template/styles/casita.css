@@ -1,0 +1,154 @@
+/* Casita Harper shafer*/
+
+/* Box-Sizing for all elements */
+* {
+	box-sizing: border-box;
+}
+
+/* Styles for the boody */
+body { 
+	background-image: url(../images/casita_background.jpg); /*Set casita_background as background image*/
+	background-repeat: no-repeat; /* Set background-image to not repeat*/
+	background-attachment: fixed; /*set background-attachment to fixed*/
+	background-size: cover; /* set background-image to cover*/
+	background-color: #F5C26B; /* Set background color */
+	color: 221811; /*set text color*/
+    font-family: Verdana, Arial, sans-serif; /* Define font family */
+}
+/* Styles for the wrapper */
+#wrapper { 
+	background-color: #DEB887; /* Set background color */
+	margin-left: auto;  /* Center the element horizontally*/
+	margin-right: auto; /* Center the element horizontally*/
+	width: 960px; /* Set width to 960 of the parent container */
+	min-width: 900px; /* Set minimum width to 900pixels of the parent container */
+	max-width: 1280px; /* Set maximum width to 1280 pixels of the parent container */
+	color: #330000; /* Set text color */
+	box-shadow: 5px 5px 5px #000000; /* Add box shaodow */
+	padding: 0;
+}
+
+
+/* Styles for header */
+header {
+	padding-top: 5px; /*Set padding to top to 5 pixels */
+	padding-bottom: 5px; /* Set padding to bottom to 5 Pixels */
+	color: #231814; /* Set text color */
+	background-color: #D2B48C; /*Set background color */
+	background-image: url(../images/logo.gif);
+	background-repeat: no-repeat; /*no repeat on the logo */
+	padding-left: 240px; /*sets left padding to 240 pixels*/
+}
+
+header a {text-decoration: none;}
+header a:link {color: #231814;}
+header a:visited {color: #231814;}
+header a:hover {color: #231814;}
+/* Styles for headers */
+main h2, h3, h4, p, div, ul, dl {
+	padding-left: 3em; /*set left padding of 3em for the h2, h3, h4, p, div, ul, and dl elements*/
+	padding-right: 2em; /*set left padding of 3em for the h2, h3, h4, p, div, ul, and dl elements*/
+}
+h1 { font-size: 3em; }/* Set h1 font size to 3em*/
+h2 { color: #8C3826; } /* Set text color */
+h3, dt {color: #8C3826; }
+h4 {
+	background-color: #D2B48C; /*Set background color for h4 */
+	font-size: 1.2em; /* Set font size to 1.2em*/
+	padding-left: .5em; /* set left side padding to .5em */
+	padding-bottom: 0; /* set bottom padding to 0*/
+	text-transform: uppercase; /* capitalize the text*/
+	border-bottom: 1px solid #221811; /* set bottom border*/
+	clear: left; /*clear left float*/
+}
+
+
+/* Styles for Nav */
+nav {
+	font-size: 1.5em;
+	padding-top: 5px; /* Add top padding */
+	padding-bottom: 5px;/* set  padding to 5 pixels on bottom*/
+	text-align: center; /*set navigation bar to the center*/
+	font-weight: bold; /* set font-weight to bold */
+    float: left; /* float nav on left */
+    width: 200px; /* Set the nav to 200 pixels in width */
+}
+
+nav a { text-decoration: none;  /* Remove underline from links */
+
+}
+/* psuedo class for nav links*/
+nav a:link { color: #000000; }  /* Set text color */
+nav a:visited{ color: #90745D; }  /* Set text color */
+nav a:hover { color: #3F4632; }  /* Set text color */
+
+nav ul { 
+	list-style-type: none; /*takes away list markers*/
+	padding-left: 0; /*sets left padding to 0*/
+}
+
+/*Styles for footer*/
+
+footer { background-color: #DAA520;  /* Set background color */
+       margin-left: 200px; /* Center the element horizontally */
+       padding: 20px; 
+       text-align: center; /* Align text to the center */
+	   font-size: small; /* Set font size */
+	   font-style: italic; /* Set font style to italic */
+}
+
+main { background-color: #DAA520; /* Set background color */
+          margin-left: 200px; /* Center the element horizontally */
+          padding: 1px 20px 20px 20px;   
+		  min-height: 300px; /*Set Maximum height */
+}
+
+/* Styles for details*/
+.details {
+	padding-left: 20%; /*20% padding to left*/
+	padding-right: 20%; /*20% padding to right*/
+	overflow: auto; /* clear a float*/
+}
+
+/*class for floating images*/
+.floatleft {
+	float: left;
+	padding-right: 2em;
+	padding-bottom: 2em;
+}
+
+/* Styles for images */
+img {
+	padding-left: 10px; /*set 10pixels padding to left */
+	padding-right: 10px; /* set 10 pixels padding to right */
+}
+
+/* Styles for casita_background*/
+
+#casita_background {
+	background-image: url(../images/casita_background.jpg); /* set the background image for the div */
+	height: 300px; /* set height for the casita image*/
+	background-size: 100% 100%; /*sets the background image to cover the width of the box the wrapper creates*/
+	background-repeat: no-repeat; /*sets the background to not repeat*/
+}
+
+#canyon {
+	background-image: url(../images/canyon.jpg);/* set the background image for the div */
+	height: 300px; /* set height for the casita image*/
+	background-size: 100% 100%; /*sets the background image to cover the width of the box the wrapper creates*/
+	background-repeat: no-repeat; /*sets the background to not repeat*/
+}
+
+#javelina {
+	background-image: url(../images/javalina.jpg); /* set the background image for the div */
+	height: 300px; /* set height for the casita image*/
+	background-size: 100% 100%; /*sets the background image to cover the width of the box the wrapper creates*/
+	background-repeat: no-repeat; /*sets the background to not repeat*/
+}
+	
+#obersvatory {
+	background-image: url(../images/obersvatory.jpg);/* set the background image for the div */
+	height: 300px; /* set height for the casita image*/
+	background-size: 100% 100%; /*sets the background image to cover the width of the box the wrapper creates*/
+	background-repeat: no-repeat; /*sets the background to not repeat*/
+}
