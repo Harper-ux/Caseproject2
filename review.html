@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Casita Sedona - Contact</title>
+<title>Casita Sedona - Reviews</title>
 <meta charset="utf-8">
 <link href="styles/casita.css" rel="stylesheet">
+<script src="review.js" defer></script>
+</head>
 <body>
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -24,9 +26,20 @@
 		</nav>
 		<!-- Main Content Section -->
         <main>
-		<h2>Contact page </h2>
-		<p> how to reach us, head office <a href="555-555-555">Head office</a><br>
-		24/7 on-sight maintence <a href="555-555-555">Maintence</a>
+		<h2>Reviews </h2>
+		<p>We love hearing from our guests!<br>
+		Please leave us a review below:</p>
+		<form id="reviewForm" action="submit_review.php" method="post">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" required><br><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="review">Review:</label><br>
+			<textarea id="review" name="review" rows="4" cols="50" required></textarea><br><br>
+
+			<button type="button" onclick="window.location.href='index.html'">Back to Home</button>
+			<button type="button" onclick="window.location.href='form.html'">Submit</button>
+		</form>
 		</main>
 		<footer>
 		Copyright &copy; 2024 WebMaster
