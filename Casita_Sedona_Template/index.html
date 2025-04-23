@@ -3,8 +3,12 @@
 <head>
 	<title>Casita Sedona</title>
 	<meta charset="utf-8">
-	<link href="../casita.css" rel="stylesheet">
-	<script src = "review.js"> defer</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles/casita.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/cass?family=Aladin' rel='stylesheet' type='text/css'>"/>
+	<script src = "casita.js" defer> </script>
+	<script src = "map.js" defer></script>
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyA4-a0-Cky31xCiqy6oty-oRzoZDxLqg&callback=initMap"></script>
 </head>
 <body>
 	<!-- Wrapper -->
@@ -15,14 +19,13 @@
 		</header>
 		<!-- Navigation Section -->
 		<nav>
-		<ul> 
-			<li><a href="index.html">Home</a></li> 
-			<li><a href="rooms/canyon.html">Canyon Room</a></li>
-			<li><a href="rooms/javelina.html">Javelina Room</a></li>
-			<li><a href="events/weekend.html">Weekend Events</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href= "review.html">Reviews</a></li>
-		</ul>
+			<ul> 
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="rooms/canyon.html">Canyon Room</a></li>
+				<li><a href="rooms/javelina.html">Javelina Room</a></li>
+				<li><a href="events/weekend.html">Weekend Events</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</nav>
 		<!-- Main Content Section -->
 		<main>
@@ -33,7 +36,19 @@
 			<p>Pets welcome, bring the family friends, along for the journey with our vast courtyard with complimentary waste disposal bags<br>
 			That get replenished daily, 
 			</p>
+			<p>Lets hear from past guests to the resort. <br>
+			"Casita Sedona was the best vacation I have ever been on! The staff was so friendly and the views were breathtaking!"<br>
+			"I loved the Canyon Room! It was so cozy and had everything I needed for a relaxing stay!"<br>
+			</p>
 			<img src="images/pets.jpg" alt="cat and dog" width="550" height="300">
+			<article id="setup">
+				<p>heres wher you can find us!</p>
+				
+				<div id="displayMap"></div>
+				<div id="routeBox"></div>
+			</article>
+
+			
 		</main>
 		<!-- Footer Section -->
 		<footer>

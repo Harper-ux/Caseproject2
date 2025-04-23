@@ -3,7 +3,10 @@
 <head>
 <title>Casita Sedona - Contact</title>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="styles/casita.css" rel="stylesheet">
+<script src="casita.js" defer></script>
+</head>
 <body>
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -19,15 +22,25 @@
 			<li><a href="rooms/javelina.html">Javelina Room</a></li>
 			<li><a href="events/weekend.html">Weekend Events</a></li>
 			<li><a href="contact.html">Contact</a></li>
-			<li><a href="reviews.html">Reviews</a></li>
 		  </ul>
 		</nav>
 		<!-- Main Content Section -->
-        <main>
-		<h2>Contact page </h2>
-		<p> how to reach us, head office <a href="555-555-555">Head office</a><br>
-		24/7 on-sight maintence <a href="555-555-555">Maintence</a>
-		</main>
+			<main>
+
+			<h2>Contact page </h2>
+				<!-- Contact information page -->
+				<p>Please tell us how we are doing, or if you have any questions, or concerns. Please fill out the form below
+				We hope you enjoy your stay with us at Casita!</p>
+				<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+					<label for="myName">Name: </label>
+					<input type="text" id="myName" name="myName" required>
+					<label for="myEmail">Email: </label>
+					<input type="text" id="myEmail" name="myEmail" required>
+					<input type="submit" value="enter">
+					<textarea id="myMessage" name="myMessage" rows="3" cols="50" required></textarea>
+				</form>
+
+			</main>
 		<footer>
 		Copyright &copy; 2024 WebMaster
 		<a href="mailto:hrshafer23@amarillocollege.com">Harper Shafer</a>
