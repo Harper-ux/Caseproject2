@@ -145,6 +145,36 @@ img {
 	background-size: 100% 100%; /*sets the background image to cover the width of the box the wrapper creates*/
 	background-repeat: no-repeat; /*sets the background to not repeat*/
 }
+table {
+	margin: auto; /* Center the table */
+	width: 90%; /* Set width to 90% of the container */
+	border-spacing: 0; /* Remove spacing between table cells */
+}
+th, td { 
+	padding: 10px; /* Add padding to table cells */
+}
+tr:nth-of-type(odd) {
+	background-color: #D2B48E; /* Background color for odd rows */
+}
+
+/* Map Styles */
+ 
+div#displayMap {
+    width: 40%;
+    padding-bottom: 30%;
+    height: 0;
+    margin: 20px auto;
+    border: 3px solid gray;
+ }
+ 
+ 
+ div#routeBox {
+    width: 70%;
+    margin: 10px auto;
+    min-height: 50px;
+    border: 3px solid gray;
+    text-align: center;
+ }
 #mobile { 
 	display: inline; /* Display as inline element */
 }

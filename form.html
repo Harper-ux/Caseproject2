@@ -1,15 +1,37 @@
-<p>Thank you for your submission</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Casita Sedona - Review Submission</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/casita.css" rel="stylesheet">
 
-<p>We appreciate your feedback and will review it shortly.</p>
-<p>Here are the details you provided:</p>
-<p><strong>Name:</strong> <?php echo htmlspecialchars($_POST['name']); ?></p>
-<p><strong>Email:</strong> <?php echo htmlspecialchars($_POST['email']); ?></p> 
-<p><strong>Review:</strong></p>
-<p><?php echo nl2br(htmlspecialchars($_POST['review'])); ?></p>
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header section -->
+        <header>
+            <h1><a href="index.html">Casita Sedona</a></h1>
+        </header>
+        <!-- Navigation Section -->
+        <nav>
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="rooms/canyon.html">Canyon Room</a></li>
+                <li><a href="rooms/javelina.html">Javelina Room</a></li>
+                <li><a href="events/weekend.html">Weekend Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-<p><a href="review.html">Back to Reviews</a></p>
-<p><a href="index.html">Back to Home</a></p>
-<p><a href="contact.html">Contact Us</a></p>
-<p><a href="rooms/canyon.html">Canyon Room</a></p>
-<p><a href="rooms/javelina.html">Javelina Room</a></p>
-<p><a href="events/weekend.html">Weekend Events</a></p>
+        <!-- Main Content Section -->
+        <main>
+            <h2>Review Submission</h2>
+            <p>Thank you for your submission</p>
+
+            <p>We appreciate your feedback and will review it shortly.</p>
+            <p>If you have any further questions or concerns, please feel free to reach out to us.</p>
+            <p>We hope you enjoyed your stay at Casita Sedona!</p>
+</html>
