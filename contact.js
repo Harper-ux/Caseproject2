@@ -1,4 +1,4 @@
-const review = [];
+const Contact = [];
 
 function addContact(){
     const name = document.getElementById("name").value;

@@ -19,14 +19,14 @@ function initMap() {
  
     
     //  // Add a marker for the Amarillo College
-    new google.maps.AdvancedMarkerElement({
+    new google.maps.Marker({
        position: amarillo,
        map: myMap,
        title: "Amarillo"
     });
  
      //  // Add a marker for the Resort
-     new google.maps.AdvancedMarkerElement({
+     new google.maps.Marker({
        position: casitaResort,
        map: myMap,
        title: "Casita Resort"

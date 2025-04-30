@@ -1,13 +1,9 @@
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Thank you for your submission!";
-    document.getElementById("demo").style.color = "green";
-    document.getElementById("demo").style.fontSize = "20px";
+function changeImage(imageSrc) {
+    const mainImage= document.getElementById("main-image");
+    mainImage.src = imageSrc;
 }
 
-function clicked() {
-    addEventListener("click", function() {
-        document.getElementById("demo").innerHTML = "Thank you for your submission!";
-        document.getElementById("demo").style.color = "green";
-        document.getElementById("demo").style.fontSize = "20px";
-    })
-};
+function changeImage1(imageSrc) {
+    const mainImage= document.getElementById("main-image1");
+    mainImage.src = imageSrc;
+}
