@@ -95,8 +95,53 @@ main {	background-color: #DAA520; /* Set background color */
         padding: 1px 20px 20px 20px;   
 		min-height: 300px; /*Set Maximum height */
 }
+.slidesshow-container {
+	max-width: 600px ; /* Set maximum width to 600 pixels */
+	margin: auto; /* Center the element horizontally */
+	position: relative; /* Set position to relative */
+}
+
+/* Slideshow caption text */
+.text {
+	color: #f2f2f2; /* Set text color */
+	font-size: 15px; /* Set font size */
+	padding: 8px 12px; /* Set padding to 8 pixels top and bottom and 12 pixels left and right */
+	position: absolute; /* Set position to absolute */
+	bottom: 8px; /* Set bottom position to 8 pixels */
+	text-align: center; /* Align text to the center */
+
+}
+.numbertext {
+	color: #f2f2f2; /* Set text color */
+	font-size: 12px; /* Set font size */
+	padding: 8px 12px; /* Set padding to 8 pixels top and bottom and 12 pixels left and right */
+	position: absolute; /* Set position to absolute */
+	top: 0; /* Set top position to 0 pixels */
+}
+.dot{
+	height: 15px; /* Set height to 15 pixels */
+	width: 15px; /* Set width to 15 pixels */
+	margin: 0 2px; /* Set margin to 0 pixels top and bottom and 2 pixels left and right */
+	background-color: #bbb; /* Set background color */
+	border-radius: 50%; /* Set border radius to 50% */
+	display: inline-block; /* Display as inline block element */
+	transition: background-color .6s ease; /* Set transition for background color */
+}
+.active { 
+	background-color: #717171; /* Set background color */	
+}
+/* fading animation */
+.fade {
+	animation-name: fade; /* Set animation name to fade */
+	animation-duration: 1.5s; /* Set animation duration to 1.5 seconds */
+}
+@keyframes fade{
+	from {opacity: .4} /* Set opacity to 0.4 at the start of the animation */
+	to {opacity: 1} /* Set opacity to 1 at the end of the animation */
+}
 
 /* Styles for details*/
+
 .details {
 	padding-left: 20%; /*20% padding to left*/
 	padding-right: 20%; /*20% padding to right*/
@@ -109,15 +154,19 @@ main {	background-color: #DAA520; /* Set background color */
 	padding-right: 2em;
 	padding-bottom: 2em;
 }
-
-/* Styles for images */
-img {
-	padding-left: 10px; /*set 10pixels padding to left */
-	padding-right: 10px; /* set 10 pixels padding to right */
-}
-
 /* Styles for casita_background*/
-
+.gallery {
+	display: flex; /* set display to flex */
+	justify-content: center; /* set justify content to center */
+	gap: 10px;
+	flex-wrap: wrap; /* set flex wrap to wrap */
+}
+.gallery img {
+	width: 200px; /* set width to 200 pixels */
+	height: auto; /* set height to auto */
+	border: 2px solid #ccc;
+	flex-wrap: wrap;
+}
 #casita_background {
 	background-image: url(../images/casita_background.jpg); /* set the background image for the div */
 	height: 300px; /* set height for the casita image*/
